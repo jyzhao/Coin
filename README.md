@@ -9,9 +9,12 @@ Timeline:
 20:00 03/09/2017 : added form validation for both coin value and total value
 
 TODO:
+
 exception handling
 
-mobile-first and responsive design, documentation,
+mobile-first and responsive design
+
+documentation,
 
 etc.
 
