@@ -1,5 +1,5 @@
 # Created by Jiyuan on 2017/3/9.
-# NOT FINAL, TO BE CONTINUED
+# NOT FINAL VERSION, PRODUCTION UNDERWAY
 
 The core of this web app is a famous DP (dynamic programming) problem.
 
