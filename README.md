@@ -5,7 +5,7 @@ The core of this web app is a famous DP (dynamic programming) problem.
 
 Languages and Frameworks used:
 
-HTML5, CSS3, Javascript
+HTML5, CSS3, JavaScript
 
 Bootstrap 3.3.7, AngularJS 1.6.2
 
