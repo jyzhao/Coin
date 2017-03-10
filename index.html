@@ -39,10 +39,10 @@
                 <span class="badge">{{amounts[3]}}</span>
             </div>
 
-            <form class="text-center" ng-submit="calculate()">
+            <form name="myForm" class="text-center" ng-submit="calculate()">
                 <div class="input-group">
                     <span class="input-group-addon">&cent;</span>
-                    <input type="text" class="form-control" ng-model="total">
+                    <input type="number" name="input" class="form-control" ng-model="total" min="0" max="1000" required>
                 </div>
                 <button class="btn btn-default">Calculate</button>
             </form>

@@ -16,10 +16,15 @@ angular.module('myApp', []).controller('myController', function ($scope) {
     $scope.total = 0;
 
     enterCoin = function (coinNum) {
-        var coinValue = prompt("Please enter a coin value.");
-        if (coinValue != null) {
+        var coinValue = Number(prompt("Please enter a coin value."));
+        if (Number.isInteger(coinValue) &&
+            coinValue > 0 &&
+            coinValue != 1) {
             $scope.coins[coinNum] = parseInt(coinValue);
             $scope.$apply();
+        }
+        else {
+            alert("Please enter a positive integer > 1");
         }
     };
 
@@ -29,7 +34,7 @@ angular.module('myApp', []).controller('myController', function ($scope) {
         //console.log($scope.coins);
         //console.log(change($scope.total,$scope.coins));
         var combination = change($scope.total, $scope.coins)[1];
-        console.log(combination);
+        //console.log(combination);
         for (var i = 0; i < combination.length; i++) switch (combination[i]) {
             case $scope.coins[0]:
                 $scope.amounts[0]++;
