@@ -19,7 +19,7 @@ TODO:
 
 exception handling
 
-mobile-first and responsive design
+refined mobile-first and responsive design
 
 documentation,
 
