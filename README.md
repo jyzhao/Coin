@@ -2,6 +2,12 @@
 
 The core of this web app is a famous DP (dynamic programming) problem.
 
+Languages and Frameworks used:
+
+HTML5, CSS3, Javascript
+
+Bootstrap 3.3.7, AngularJS 1.6.2
+
 Timeline:
 
 14:00 03/09/2017 : spent 2 hours during the lunch break today to implement the bulk of this program.
