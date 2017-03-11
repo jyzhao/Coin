@@ -4,8 +4,7 @@
  * The core of this web app is a famous DP (dynamic programming) problem
  * I've spent 2 hours during the lunch break today to implement the bulk
  * of this program.
- * There are still small things to work on such as form validation, exception handling,
- *  mobile-first and responsive design, documentation, etc.
+ * There are still small things to work on such as mobile-first and responsive design, documentation, etc.
  * I will update the program after work and commit to GitHub daily.
  * If you have any questions during this development period,
  * please email me at zhao.jiyu@husky.neu.edu
@@ -17,14 +16,15 @@ angular.module('myApp', []).controller('myController', function ($scope) {
 
     enterCoin = function (coinNum) {
         var coinValue = Number(prompt("Please enter a coin value."));
-        if (Number.isInteger(coinValue) &&
-            coinValue > 0 &&
-            coinValue != 1) {
+        if (Number.isInteger(coinValue) &&              //check if it is integer
+            coinValue > 0 &&                            //check if coin value is positive
+            coinValue != 1 &&                           //make sure coin value is not 1
+            $scope.coins.indexOf(coinValue) == -1) {    //make sure there are no duplicates
             $scope.coins[coinNum] = parseInt(coinValue);
-            $scope.$apply();
+            $scope.$apply();                            //refresh data
         }
         else {
-            alert("Please enter a positive integer > 1");
+            alert("Please enter a unique positive integer > 1");
         }
     };
 
