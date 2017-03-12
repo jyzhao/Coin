@@ -16,26 +16,26 @@
 <body ng-controller="myController">
 
 <div class="container">
-    <div class="panel panel-default">
+    <div class="panel panel-default col-xl-6 col-xl-offset-3 col-lg-6 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
         <div class="panel-heading text-center">Coin Counter</div>
 
         <div class="panel-body">
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
                 <button type="button" class="btn btn-default btn-circle btn-xl" onclick="enterCoin(0)">
                     {{coins[0]}}&cent;</button>
                 <span class="badge">{{amounts[0]}}</span>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
                 <button type="button" class="btn btn-default btn-circle btn-xl" onclick="enterCoin(1)">
                     {{coins[1]}}&cent;</button>
                 <span class="badge">{{amounts[1]}}</span>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
                 <button type="button" class="btn btn-default btn-circle btn-xl" onclick="enterCoin(2)">
                     {{coins[2]}}&cent;</button>
                 <span class="badge">{{amounts[2]}}</span>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 text-center">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
                 <button type="button" class="btn btn-default btn-circle btn-xl disabled">{{coins[3]}}&cent;</button>
                 <span class="badge">{{amounts[3]}}</span>
             </div>
@@ -45,7 +45,7 @@
                     <span class="input-group-addon">&cent;</span>
                     <input type="number" name="input" class="form-control" ng-model="total" min="0" max="1000" required>
                 </div>
-                <button class="btn btn-default">Calculate</button>
+                <button class="btn btn-default" id="calculate">CALCULATE</button>
             </form>
             <br>
         </div>

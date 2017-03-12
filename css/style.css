@@ -1,5 +1,4 @@
 .btn-circle {
-    position: relative;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -7,10 +6,12 @@
     font-size: 12px;
     line-height: 1.428571429;
     border-radius: 15px;
+    background-color: gainsboro;
+    color: gray;
+    margin: 4%;
 }
 
 .btn-circle.btn-lg {
-    position: relative;
     width: 50px;
     height: 50px;
     padding: 10px 16px;
@@ -20,7 +21,6 @@
 }
 
 .btn-circle.btn-xl {
-    position: relative;
     width: 70px;
     height: 70px;
     padding: 10px 16px;
@@ -30,8 +30,27 @@
 }
 
 .badge {
-    position: absolute;
+    position: relative;
+    left: -25px;
+    top: -25px;
+    background-color: black;
+}
 
-    top: 40%;
-    left: 40%;
+.input-group {
+    left: 23%;
+    width: 50%;
+    margin: 2%;
+}
+
+#calculate {
+    width: 50%;
+    color: white;
+    background-color: black;
+    margin: 2%;
+}
+
+#calculate:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
