@@ -17,6 +17,8 @@ Timeline:
 
 13:00 03/11/2017 : added more form validation and exception handling. Now it prevents users from entering duplicate coin values
 
+20:00 03/11/2017 : added mobile-first and responsive design, as well as styling
+
 TODO:
 
 refined mobile-first and responsive design
