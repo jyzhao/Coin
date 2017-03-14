@@ -16,7 +16,7 @@
 <body ng-controller="myController">
 
 <div class="container">
-    <div class="panel panel-default col-xl-6 col-xl-offset-3 col-lg-6 col-lg-offset-3 col-md-12 col-sm-12 col-xs-12">
+    <div class="panel panel-default col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
         <div class="panel-heading text-center">Coin Counter</div>
 
         <div class="panel-body">
@@ -43,7 +43,8 @@
             <form name="myForm" class="text-center" ng-submit="calculate()">
                 <div class="input-group">
                     <span class="input-group-addon">&cent;</span>
-                    <input type="number" name="input" class="form-control" ng-model="total" min="0" max="1000" required>
+                    <input type="number" name="input" id="input-total" class="form-control" ng-model="total" min="0"
+                           max="1000" required>
                 </div>
                 <button class="btn btn-default" id="calculate">CALCULATE</button>
             </form>

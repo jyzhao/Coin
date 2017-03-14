@@ -10,6 +10,12 @@
  * please email me at zhao.jiyu@husky.neu.edu
  */
 
+/*  One possible solution to the performance issue is to move all calculations to the backend,
+ so that the performance is not limited by the browser's javascript engine.
+ Another way is to add a hash to the algorithm so that it's not necessary to calculate
+ the same data repeatedly. Therefore, we can reduce some time and space complexity.
+ */
+
 angular.module('myApp', []).controller('myController', function ($scope) {
     $scope.coins = [25, 10, 5, 1];
     $scope.total = 0;
@@ -61,12 +67,12 @@ angular.module('myApp', []).controller('myController', function ($scope) {
         if (coins[0] > total) {
             return change(total, coins.slice(1));
         } else {
-            var loseIt = change(total, coins.slice(1));
-            var useIt = change(total - coins[0], coins);
-            if (loseIt[0] < 1 + useIt[0]) {
-                return loseIt;
+            var lose = change(total, coins.slice(1));
+            var use = change(total - coins[0], coins);
+            if (lose[0] < 1 + use[0]) {
+                return lose;
             } else {
-                return [1 + useIt[0], useIt[1].concat(coins[0])];
+                return [1 + use[0], use[1].concat(coins[0])];
             }
         }
     }
