@@ -17,11 +17,9 @@ Timeline:
 
 13:00 03/11/2017 : added more form validation and exception handling. Now it prevents users from entering duplicate coin values
 
-<<<<<<< HEAD
-20:00 03/13/2017 : refined responsive design, fixed a small bug that prevents proper display of the "notification"
-=======
 20:00 03/11/2017 : added mobile-first and responsive design, as well as styling
->>>>>>> origin/master
+
+20:00 03/13/2017 : refined responsive design, fixed a small bug that prevents proper display of the "notification"
 
 TODO:
 
