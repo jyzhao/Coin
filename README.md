@@ -7,7 +7,7 @@ Languages and Frameworks used:
 
 HTML5, CSS3, JavaScript
 
-Bootstrap 3.3.7, AngularJS 1.6.2
+Bootstrap 3.3.7, AngularJS 1.5.5
 
 Timeline:
 
@@ -21,14 +21,12 @@ Timeline:
 
 20:00 03/13/2017 : refined responsive design, fixed a small bug that prevents proper display of the "notification"
 
+16:00 03/22/2017 : Minor functional updates and small tweaking in UI, Added ng-material for prompt dialog, removed redundant declaration and file import in css and html
+
 TODO:
 
 refined mobile-first and responsive design
 
-documentation,
-
 etc.
-
-I will update the program after work and commit to GitHub daily.
 
 If you have any questions during this development period, please email me at zhao.jiyu@husky.neu.edu
